@@ -1,0 +1,303 @@
+html, body * {
+  margin: 2.5px;
+  padding: 5px;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; /*Back up fonts in case the one I downloaded and, for the purposes of this app, have named "thisFont", fails. */
+}
+body {
+  background: url(sitin.jpg) no-repeat center fixed; /*image source: https://bloximages.chicago2.vip.townnews.com/host.madison.com/content/tncms/assets/v3/editorial/0/6e/06e29fd6-3229-11df-835a-001cc4c03286/06e29fd6-3229-11df-835a-001cc4c03286.image.jpg*/
+  background-size: contain;
+  background-color: #E4F1FE;
+}
+@font-face {
+  font-family: thisFont;
+  src: url(JMHLegajoBold.otf); /* Some classmates gave me the idea of finding a custom font and storing it in the directory with the coding pages. I browsed for a long time for something that fit the vibe I was going for, but I ended up loving this font. Along with the black and white photo I chose, it creates a feeling of timelessness in activism, even though we're talking about computer-driven organizing techniques.*/
+}
+.title {
+  font-size: 6rem; /*I learned that its more professional and responsive to use rem for font size*/
+  text-align: left;
+  font-family: thisFont;
+  color: #00008B;
+  margin-left: 10%;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  }
+  .title2 {
+    font-size: 3rem;
+    color: #00008B;
+    text-align: right;
+    font-family: thisFont;
+    margin-right: 10%;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    }
+    .instructions{
+      font-size: 1.2rem; /*I switched everything to rem and in doing so I utilized a new trick as well: I previewed the font changes by editing the code in the console so I could decide what sizes I liked before transferring to my atom document!*/
+      color: black;
+      font-family: thisFont;
+      text-align: center;
+      margin-bottom: 3vw;
+      background-color: #E4F1FE;
+    }
+    .label {
+      color: #00008B;
+      display: inline;
+      font-size: 2rem;
+      font-family: thisFont;
+    }
+    p {
+      font-size: 2rem;
+      color: #00008B;
+      font-family: thisFont;
+      text-align: center;
+      margin: 0;
+    }
+    p1, p2, p3, p4, p5, p6 {
+      flex: 0 0 10%;
+      text-align: center;
+      font-family: thisFont;
+      color: black;
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-top: 0;
+      margin: 1rem;
+      padding: 0;
+      background-color: #E4F1FE;
+    }
+    .twitter-timeline {
+      margin-left: 5vw;
+      margin-bottom: 10vw;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 10;
+    }
+section {
+  display: flex;
+    }
+#news_box {
+  flex: 0 0 45%;
+    }
+#news_box p {
+  font-size: 1.2rem;
+  background-color: #E4F1FE;
+    }
+#tweetlistholder {
+  flex: 0 0 45%;
+    }
+#tooltip_wrapper {
+  display: flex;
+  flex-direction: row;
+    }
+.tooltip { /*this is a modified Tooltip I originally found on W3Schools */
+flex: 0 0 10%;
+position: relative;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden; /* The information block is hidden until you hover your mouse over it  */
+  width: 500px;
+  background-color: #E4F1FE;
+  color: black;
+  text-align: left;
+  margin-left: 1.5vh;
+  margin-right: 1.5vh;
+  margin-top: 1.5vh;
+  margin-bottom: 1.5vh;
+  padding: 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 100%;
+}
+.tooltiptext {
+font-size: 1rem;
+font-family: thisFont;
+font-style: normal;
+font-weight: lighter;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip2 { /*this is a modified Tooltip I originally found on W3Schools. This is for the second hashtag. */
+  flex: 0 0 10%;
+  position: relative;
+}
+
+.tooltip2 .tooltiptext2 {
+  visibility: hidden;
+  width: 500px;
+  background-color: white;
+  color: black;
+  text-align: left;
+  padding: 0;
+  margin-left: 1.5vh;
+  margin-right: 1.5vh;
+  margin-top: 1.5vh;
+  margin-bottom: 1.5vh;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 20%;
+}
+.tooltiptext2 {
+  font-size: 1rem;
+  font-family: thisFont;
+  font-style: normal;
+  font-weight: lighter;
+}
+
+.tooltip2:hover .tooltiptext2 {
+  visibility: visible;
+}
+    .tooltip3 { /*this is a modified Tooltip I originally found on W3Schools. This is for the third hashtag. */
+        position: relative;
+        flex: 0 0 10%;
+    }
+
+    .tooltip3 .tooltiptext3 {
+        visibility: hidden;
+        width: 1000px;
+        background-color: #E4F1FE;
+        color: black;
+        text-align: left;
+        padding: 0;
+        margin-left: 1.5vh;
+        margin-right: 1.5vh;
+        margin-top: 1.5vh;
+        margin-bottom: 1.5vh;
+  /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        top: -5px;
+        left: -200%;
+      }
+    .tooltiptext3 {
+        font-size: 1rem;
+        font-family: thisFont;
+        font-style: normal;
+        font-weight: lighter;
+      }
+
+    .tooltip3:hover .tooltiptext3 {
+        visibility: visible;
+      }
+        .tooltip4 { /*this is a modified Tooltip I originally found on W3Schools. This is for the fourth hashtag. */
+            position: relative;
+            flex: 0 0 10%;
+        }
+        .tooltip4 .tooltiptext4 {
+            visibility: hidden;
+            width: 1000px;
+            background-color: white;
+            color: black;
+            text-align: left;
+            padding: 0;
+            margin-left: 1.5vh;
+            margin-right: 1.5vh;
+            margin-top: 1.5vh;
+            margin-bottom: 1.5vh;
+  /* Position the tooltip */
+            position: absolute;
+            z-index: 1;
+            top: -5px;
+            left: -300%;
+        }
+        .tooltiptext4 {
+            font-size: 1rem;
+            font-family: thisFont;
+            font-style: normal;
+            font-weight: lighter;
+        }
+        .tooltip4:hover .tooltiptext4 {
+            visibility: visible;
+        }
+        .tooltip5 { /*this is a modified Tooltip I originally found on W3Schools. This is for the fifth hashtag. */
+            position: relative;
+            flex: 0 0 10%;
+        }
+        .tooltip5 .tooltiptext5 {
+            visibility: hidden;
+            width: 800px;
+            background-color: #E4F1FE;
+            color: black;
+            text-align: left;
+            padding: 0;
+            margin-left: 1.5vh;
+            margin-right: 1.5vh;
+            margin-top: 1.5vh;
+            margin-bottom: 1.5vh;
+  /* Position the tooltip */
+            position: absolute;
+            z-index: 1;
+            top: -5px;
+            left: -150%;
+        }
+        .tooltiptext5 {
+            font-size: 1rem;
+            font-family: thisFont;
+            font-style: normal;
+            font-weight: lighter;
+        }
+        .tooltip5:hover .tooltiptext5 {
+            visibility: visible;
+        }
+            .tooltip6 { /*this is a modified Tooltip I originally found on W3Schools. This is for the sixth hashtag. */
+                position: relative;
+                flex: 0 0 10%;
+            }
+            .tooltip6 .tooltiptext6 {
+                visibility: hidden;
+                width: 750px;
+                background-color: white;
+                color: black;
+                text-align: left;
+                padding: 0;
+                margin-left: 1.5vh;
+                margin-right: 1.5vh;
+                margin-top: 1.5vh;
+                margin-bottom: 1.5vh;
+  /* Position the tooltip */
+                position: absolute;
+                z-index: 1;
+                top: -5px;
+                left: -300%;
+            }
+            .tooltiptext6 {
+                font-size: 1rem;
+                font-family: thisFont;
+                font-style: normal;
+                font-weight: lighter;
+            }
+            .tooltip6:hover .tooltiptext6 {
+                visibility: visible;
+            }
+  @media only screen and (max-width:500px){ /*for mobile devices*/
+    /*these media queries target most of the elements of app*/
+    /*Unfortunately not all of these calls are functioning correctly. The title and the hashtags in the footer and the plot.ly graphs are not always responsive.*/
+              h1, h2, h3, h4, footer, span, script {
+                flex-direction: column;
+                flex-flow: column;
+                }
+              .label, .tooltip, .tooltip2, .tooltip3, .tooltip4, .tooltip5, .tooltip6, .instructions
+              {
+                flex-direction: column;
+                flex-flow: column;
+              }
+              #hash_list, #plotlyPieDiv, #plotlyBarDiv, #tweetlistholder, #news_box {
+                flex-direction: row;
+                flex-flow: row;
+                flex-shrink: 2;
+              }
+              p1, p2, p3, p4, p5, p6{
+                flex-direction: column;
+                flex-flow: column;
+              }
+              }

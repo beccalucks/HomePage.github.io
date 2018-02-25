@@ -1,0 +1,140 @@
+html, body * { /*creates a standard for the whole set of pages !!This CSS styles every HTML page in my website! One of my biggest challenges was keeping everything doing only what I wanted from so many different HTML pages, but it was worth the challenge. I feel that drawing from one CSS makes the code easier to understand and more reproducable*/
+  box-sizing:border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: thisFont, Lucida Sans Typewriter, Courier New, Courier, monospace;
+  color: black;
+}
+body {
+  background-color: #E9E9E9;
+  font-size: calc(2rem + 0.25vw);
+  font-family: Lucida Sans Typewriter, Courier New, Courier, monospace; /* multiple fonts so if a browser doesn't support one, there is a back-up*/
+}
+@font-face {
+  font-family: thisFont;
+  src: url(JMHLegajoBold.otf); /* Some classmates gave me the idea of finding a custom font and storing it in the directory with the coding pages. I browsed for a long time for something that fit the vibe I was going for, but I ended up loving this font. Along with the black and white photo I chose, it creates a feeling of timelessness in activism, even though we're talking about computer-driven organizing techniques.*/
+}
+.article {
+  padding: 2vw;
+
+}
+
+.rezz {
+  padding: 2vw;
+}
+.social {
+  font-size: 11vw;
+  padding:1.2vw;
+}
+.expl {
+  font-size: calc(.75rem + 0.5vw);
+  background-color: #E9E9E9;
+}
+.home {
+  text-align: center;
+}
+.links {
+  text-decoration: none;
+  flex-direction: row;
+  align-content: space-around;
+  color: purple;
+}
+.linksh {
+  text-align: center;
+}
+.linkso {
+  float: right;
+  list-style: none;
+  padding-right: 30vw;
+  padding-left: 10vw;
+}
+.introheadline {
+  font-size: calc(2.2rem + 0.75vw);
+  padding-bottom: 0;
+}
+.me {
+  padding-right: 2vw;
+  width: 30vw;
+  height: 30vw;
+}
+img {
+  float: left;
+}
+.flex-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.intro{
+  font-size: .5em;
+  column-count: 2;
+  padding: 2%;
+  text-align: left;
+}
+footer {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+footer ul {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width:500px){ /*for mobile devices*/
+  /*these media queries target most of the elements of the website*/
+
+    .h1{
+      flex-direction: column;
+      flex-flow: column;
+    }
+    .h2{
+      flex-direction: column;
+      flex-flow: column;
+    }
+  .h3{
+    flex-direction: column;
+    flex-flow: column;
+  }
+.intro {
+  flex-direction: column;
+  flex-flow: column;
+}
+    .flex-wrapper{
+      flex-direction: row;
+    }
+.me {
+  flex-direction: column;
+  flex-flow: column;
+}
+.introheadline {
+  flex-direction: column;
+  flex-flow: column;
+}
+.article {
+  flex-direction: column;
+  flex-flow: column;
+}
+footer {
+  flex-direction: column;
+  flex-flow: column;
+}
+
+.social {
+  flex-direction: column;
+  flex-flow: column;
+}
+.expl {
+  flex-direction: column;
+  flex-flow: column;
+}
+.home {
+  flex-direction: column;
+  flex-flow: column;
+}
+.links {
+  flex-direction: column;
+  flex-flow: column;
+}
+  }
