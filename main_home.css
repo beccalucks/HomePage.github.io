@@ -4,31 +4,23 @@ html, body * { /*creates a standard for the whole set of pages !!This CSS styles
   padding: 0px;
   font-family: thisFont, Lucida Sans Typewriter, Courier New, Courier, monospace;
   color: black;
-
 }
 body {
   background-color: #E9E9E9;
   font-size: calc(2rem + 0.25vw);
   font-family: Lucida Sans Typewriter, Courier New, Courier, monospace; /* multiple fonts so if a browser doesn't support one, there is a back-up*/
-
 }
 @font-face {
   font-family: thisFont;
   src: url(JMHLegajoBold.otf); /* Some classmates gave me the idea of finding a custom font and storing it in the directory with the coding pages. I browsed for a long time for something that fit the vibe I was going for, but I ended up loving this font. Along with the black and white photo I chose, it creates a feeling of timelessness in activism, even though we're talking about computer-driven organizing techniques.*/
 }
 .article {
-  width: 100%;
+  padding: 2vw;
+
 }
-footer {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-}
-footer ul {
-  text-align: center;
-  display: flex;
-  justify-content: center;
+
+.rezz {
+  padding: 2vw;
 }
 .social {
   font-size: 11vw;
@@ -40,22 +32,21 @@ footer ul {
 }
 .home {
   text-align: center;
-  padding-top: 10%;
 }
 .links {
   text-decoration: none;
   flex-direction: row;
-  text-align: left;
   align-content: space-around;
   color: purple;
 }
 .linksh {
   text-align: center;
 }
-.linksm {
-  text-align: center;
-  text-align: left;
-  columns: none;
+.linkso {
+  float: right;
+  list-style: none;
+  padding-right: 30vw;
+  padding-left: 10vw;
 }
 .introheadline {
   font-size: calc(2.2rem + 0.75vw);
@@ -73,17 +64,24 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-items: center;
-  text-align: center;
-  align-content: center;
 }
 .intro{
   font-size: .5em;
   column-count: 2;
-  padding: 5%;
+  padding: 2%;
   text-align: left;
 }
-
+footer {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+footer ul {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
 @media only screen and (max-width:500px){ /*for mobile devices*/
   /*these media queries target most of the elements of the website*/
 
